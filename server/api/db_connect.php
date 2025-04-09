@@ -9,7 +9,7 @@ header('Access-Control-Allow-Headers: Content-Type');
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "cytech0001";
+$password = "your_root_password";
 $dbname = "flixnet";
 
 // Créer une connexion
@@ -17,7 +17,9 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Vérifier la connexion
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die(json_encode(['success' => false, 'message' => 'Connection failed: ' . $conn->connect_error]));
 }
-echo "Connected successfully";
+
+// Répondre avec un JSON
+echo json_encode(['success' => true, 'message' => 'Connected successfully']);
 ?>
