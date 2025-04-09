@@ -1,10 +1,16 @@
-
 <?php
+header('Access-Control-Allow-Origin: http://localhost:3000');
+header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type');
+
 include 'db_connect.php';
+
+if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
+    exit; // Handle preflight requests
+}
 
 $data = json_decode(file_get_contents('php://input'), true);
 
-// Vérifiez les données reçues
 if (!$data || !isset($data['username']) || !isset($data['email']) || !isset($data['password'])) {
     echo json_encode(['success' => false, 'message' => 'Invalid data received']);
     exit;
