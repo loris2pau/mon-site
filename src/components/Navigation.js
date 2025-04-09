@@ -18,6 +18,7 @@ const Navigation = ({ onContentChange, onProgramSelect }) => {
           <button style={{ backgroundColor: '#3357FF' }} onClick={() => onProgramSelect('replay')}>Replay</button>
         </li>
         <li><button onClick={() => onContentChange('connexion')}>Connexion</button></li>
+        <li><button onClick={() => onContentChange('inscription')}>Inscription</button></li>
       </ul>
     </nav>
   );
