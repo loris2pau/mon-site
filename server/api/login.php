@@ -1,24 +1,25 @@
 <?php
-header('Access-Control-Allow-Origin: http://localhost:3000');
-header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
-header('Access-Control-Allow-Headers: Content-Type');
+include 'db_connect.php';
 
-?>
-
-<?php
-header('Content-Type: application/json');
 
 $data = json_decode(file_get_contents('php://input'), true);
+var_dump($data); // Ajoutez ceci pour vérifier les données reçues
 
+
+$username = $data['username'];
 $email = $data['email'];
-$password = $data['password'];
+$password = password_hash($data['password'], PASSWORD_DEFAULT); // Hash the password
+$firstName = $data['firstName'];
+$lastName = $data['lastName'];
 
-// Vérifiez les informations d'identification dans la base de données
-// ...
+$sql = "INSERT INTO users (username, email, password, first_name, last_name)
+        VALUES ('$username', '$email', '$password', '$firstName', '$lastName')";
 
-if ($user_found) {
+if ($conn->query($sql) === TRUE) {
     echo json_encode(['success' => true]);
 } else {
-    echo json_encode(['success' => false, 'message' => 'Invalid credentials']);
+    echo json_encode(['success' => false, 'message' => $conn->error]);
 }
+
+$conn->close();
 ?>

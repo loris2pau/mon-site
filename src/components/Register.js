@@ -21,6 +21,7 @@ const Register = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
     if (formData.password !== formData.confirmPassword) {
       alert('Les mots de passe ne correspondent pas.');
       return;
@@ -37,13 +38,27 @@ const Register = () => {
     .then(response => response.json())
     .then(data => {
       if (data.success) {
+        console.log('Inscription réussie');
         alert('Inscription réussie');
-        // Rediriger l'utilisateur ou mettre à jour l'état
+        // Effacer le formulaire
+        setFormData({
+          username: '',
+          email: '',
+          password: '',
+          confirmPassword: '',
+          firstName: '',
+          lastName: ''
+        });
+        console.log('Formulaire réinitialisé');
       } else {
-        alert('Échec de l\'inscription');
+        console.log(`Échec de l'inscription: ${data.message}`);
+        alert(`Échec de l'inscription: ${data.message}`);
       }
     })
-    .catch(error => console.error('Erreur:', error));
+    .catch(error => {
+      console.error('Erreur:', error);
+      alert('Erreur lors de l\'inscription');
+    });
   };
 
   return (
