@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import '../css/auth.css';
 
-const Login = () => {
+const Login = ({ onLoginSuccess }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Appel fetch pour envoyer les données au serveur PHP
     fetch('http://localhost:8000/login.php', {
       method: 'POST',
       headers: {
@@ -19,10 +18,10 @@ const Login = () => {
     .then(response => response.json())
     .then(data => {
       if (data.success) {
-        alert('Connexion réussie');
-        // Rediriger l'utilisateur ou mettre à jour l'état
+        // Appeler la fonction de rappel avec le nom d'utilisateur
+        onLoginSuccess(data.username);
       } else {
-        alert('Échec de la connexion');
+        alert(`Échec de la connexion: ${data.message}`);
       }
     })
     .catch(error => console.error('Erreur:', error));

@@ -1,8 +1,7 @@
-// Navigation.js
 import React from 'react';
 import '../css/navigation.css';
 
-const Navigation = ({ onContentChange, onProgramSelect }) => {
+const Navigation = ({ onContentChange, onProgramSelect, isLoggedIn }) => {
   return (
     <nav>
       <ul>
@@ -17,8 +16,12 @@ const Navigation = ({ onContentChange, onProgramSelect }) => {
         <li>
           <button style={{ backgroundColor: '#3357FF' }} onClick={() => onProgramSelect('replay')}>Replay</button>
         </li>
-        <li><button onClick={() => onContentChange('connexion')}>Connexion</button></li>
-        <li><button onClick={() => onContentChange('inscription')}>Inscription</button></li>
+        {!isLoggedIn && (
+          <>
+            <li><button onClick={() => onContentChange('connexion')}>Connexion</button></li>
+            <li><button onClick={() => onContentChange('inscription')}>Inscription</button></li>
+          </>
+        )}
       </ul>
     </nav>
   );

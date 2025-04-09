@@ -1,4 +1,3 @@
-// App.js
 import React, { useState } from 'react';
 import './css/layout.css';
 import Header from './components/Header';
@@ -14,6 +13,8 @@ import replay from './data/replay.json';
 function App() {
   const [content, setContent] = useState('accueil');
   const [selectedProgram, setSelectedProgram] = useState(null);
+  const [username, setUsername] = useState('');
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleContentChange = (newContent) => {
     setContent(newContent);
@@ -25,10 +26,16 @@ function App() {
     setContent('programme');
   };
 
+  const handleLoginSuccess = (user) => {
+    setUsername(user);
+    setIsLoggedIn(true);
+    setContent('accueil'); // Rediriger vers la page d'accueil après connexion
+  };
+
   const renderContent = () => {
     switch (content) {
       case 'connexion':
-        return <Login />;
+        return <Login onLoginSuccess={handleLoginSuccess} />;
       case 'inscription':
         return <Register />;
       case 'programme':
@@ -51,9 +58,9 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header username={username} />
       <div className="main-container">
-        <Navigation onContentChange={handleContentChange} onProgramSelect={handleProgramSelect} />
+        <Navigation onContentChange={handleContentChange} onProgramSelect={handleProgramSelect} isLoggedIn={isLoggedIn} />
         {renderContent()}
       </div>
       <Footer />
