@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "title": "12 coups de midi",
+        "genre": "Culture",
+        "duration": "50m",
+        "img": "1.webp",
+        "description": "Les aventures d'Émillien",
+        "prix": 1,
+        "stock" : 3
+    },
+    {
+        "id": 2,
+        "title": "Koh-Lanta",
+        "genre": "Aventure",
+        "duration": "2h",
+        "img": "2.webp",
+        "description": "Des aventuriers s'affrontent sur une île déserte.",
+        "prix": 1,
+        "stock" : 3
+    },
+    {
+        "id": 3,
+        "title": "Top Chef",
+        "genre": "Cuisine",
+        "duration": "1h 30m",
+        "img": "3.webp",
+        "description": "Des chefs amateurs s'affrontent pour devenir le meilleur cuisinier.",
+        "prix": 1,
+        "stock" : 3
+    },
+    {
+        "id": 4,
+        "title": "Les Marseillais",
+        "genre": "Téléréalité",
+        "duration": "45m",
+        "img": "4.webp",
+        "description": "Suivez les aventures d'un groupe d'amis à Marseille.",
+        "prix": 100,
+        "stock" : 3
+    },
+    {
+        "id": 5,
+        "title": "Un dîner presque parfait ",
+        "genre": "Cuisine",
+        "duration": "30m",
+        "img": "5.webp",
+        "description": "Une série dramatique sur la vie quotidienne à Marseille.",
+        "prix": 1,
+        "stock" : 3
+    },
+    {
+        "id": 6,
+        "title": "Fort Boyard",
+        "genre": "Jeux",
+        "duration": "2h",
+        "img": "6.webp",
+        "description": "Des équipes s'affrontent dans un fort pour récupérer des clés.",
+        "prix": 1,
+        "stock" : 3
+    },
+    {
+        "id": 7,
+        "title": "Danse avec les stars",
+        "genre": "Divertissement",
+        "duration": "2h",
+        "img": "7.webp",
+        "description": "Des célébrités apprennent à danser avec des professionnels.",
+        "prix": 1,
+        "stock" : 3
+    },
+    {
+        "id": 8,
+        "title": "N'oubliez pas les paroles",
+        "genre": "Musique",
+        "duration": "1h",
+        "img": "8.webp",
+        "description": "Un karaoké géant où les candidats doivent chanter sans oublier les paroles.",
+        "prix": 1,
+        "stock" : 3
+    },
+    {
+        "id": 9,
+        "title": "Secret Story",
+        "genre": "Téléréalité",
+        "duration": "45m",
+        "img": "9.webp",
+        "description": "Des candidats vivent ensemble en cachant un secret.",
+        "prix": 1,
+        "stock" : 3
+    },
+    {
+        "id": 10,
+        "title": "C à vous",
+        "genre": "Talk-show",
+        "duration": "1h 30m",
+        "img": "10.webp",
+        "description": "Un talk-show quotidien avec des invités variés.",
+        "prix": 1,
+        "stock" : 3
+    }
+]

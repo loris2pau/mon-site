@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "title": "Intouchables",
+        "genre": "Comédie dramatique",
+        "duration": "1h 52m",
+        "img": "1.webp",
+        "description": "L'histoire d'une amitié improbable entre un aristocrate tétraplégique et un jeune de banlieue.",
+        "prix": 3.99,
+        "stock" : 3
+    },
+    {
+        "id": 2,
+        "title": "Le Fabuleux Destin d'Amélie Poulain",
+        "genre": "Comédie romantique",
+        "duration": "2h 2m",
+        "img": "2.webp",
+        "description": "Une jeune femme timide décide de changer la vie des gens autour d'elle.",
+        "prix": 2.99,
+        "stock" : 3
+    },
+    {
+        "id": 3,
+        "title": "La Haine",
+        "genre": "Drame",
+        "duration": "1h 38m",
+        "img": "3.webp",
+        "description": "Trois jeunes de banlieue face à la violence et à l'exclusion.",
+        "prix": 3.49,
+        "stock" : 3
+    },
+    {
+        "id": 4,
+        "title": "Le Grand Bleu",
+        "genre": "Aventure",
+        "duration": "2h 18m",
+        "img": "4.webp",
+        "description": "L'histoire de deux plongeurs en apnée et de leur rivalité.",
+        "prix": 4.99,
+        "stock" : 3
+    },
+    {
+        "id": 5,
+        "title": "Les Choristes",
+        "genre": "Drame musical",
+        "duration": "1h 37m",
+        "img": "5.webp",
+        "description": "Un professeur de musique transforme la vie des élèves d'un internat.",
+        "prix": 3.99,
+        "stock" : 3
+    },
+    {
+        "id": 6,
+        "title": "Le Dîner de Cons",
+        "genre": "Comédie",
+        "duration": "1h 20m",
+        "img": "6.webp",
+        "description": "Un éditeur organise un dîner avec des « cons » pour se moquer d'eux.",
+        "prix": 2.99,
+        "stock" : 3
+    },
+    {
+        "id": 7,
+        "title": "Les Bodin’s partent en vrille",
+        "genre": "Comédie",
+        "duration": "1h 35m",
+        "img": "7.webp",
+        "description": "Pour les 50 ans de son fils, Maria Bodin va tout faire pour que cet anniversaire soit inoubliable.",
+        "prix": 0.49,
+        "stock" : 3
+    },
+    {
+        "id": 8,
+        "title": "Le Père Noël est une ordure",
+        "genre": "Comédie",
+        "duration": "1h 28m",
+        "img": "8.webp",
+        "description": "Les mésaventures d'une permanence téléphonique de SOS Détresse Amitié le soir de Noël.",
+        "prix": 2.99,
+        "stock" : 3
+    },
+    {
+        "id": 9,
+        "title": "Bienvenue chez les Ch'tis",
+        "genre": "Comédie",
+        "duration": "1h 46m",
+        "img": "9.webp",
+        "description": "Un directeur de la poste est muté dans le Nord de la France.",
+        "prix": 3.99,
+        "stock" : 3
+    },
+    {
+        "id": 10,
+        "title": "Le Cinquième Élément",
+        "genre": "Science-fiction",
+        "duration": "2h 6m",
+        "img": "10.webp",
+        "description": "Un chauffeur de taxi aide une mystérieuse jeune femme à sauver le monde.",
+        "prix": 4.99,
+        "stock" : 3
+    }
+]

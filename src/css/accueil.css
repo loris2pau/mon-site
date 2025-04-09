@@ -1,0 +1,138 @@
+/* mainContent.css */
+/* Style général pour le corps de la page */
+body {
+    background-color: #14213D;
+    /* Bleu foncé pour le fond */
+    color: #F5F5F5;
+    /* Texte blanc cassé */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 1em;
+}
+
+/* Style pour les titres */
+h1,
+h2,
+h3 {
+    color: #4A90E2;
+    /* Bleu moyen pour les titres */
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Style pour les boutons */
+button:not(.quantity-button) {
+    background-color: #007BFF;
+    /* Bleu vif */
+    color: #FFFFFF;
+    /* Texte blanc */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button::not(.quantity-button)  {
+    background-color: #005BB5;
+    /* Bleu plus foncé au survol */
+}
+
+/* Style pour les liens */
+a {
+    color: #007BFF;
+    /* Bleu vif pour les liens */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style pour les bordures et lignes */
+hr {
+    border: 0;
+    height: 1px;
+    background: #2A9D8F;
+    /* Bleu-vert pour les lignes */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    background-color: #1e2738;
+    /* Bleu foncé pour les en-têtes */
+    color: #f5f5f5;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #2d3a54;
+    /* Alternance de couleur pour les lignes */
+}
+
+tr:hover {
+    background-color: #3b4962;
+    /* Effet de survol */
+}
+
+img {
+    max-width: 50px;
+    border-radius: 5px;
+}
+
+/* Style pour les boutons "+" et "-" */
+.quantity-button {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #14213D;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quantity-button:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.1);
+}
+
+.quantity-button:active {
+    background-color: #ccc;
+}
+
+/* Style pour le texte de la quantité */
+.quantity-display {
+    font-size: 14px;
+    margin: 0 5px;
+    color: #a3a3a3;
+}
+
+/* Style pour la cellule contenant les boutons et le texte */
+.quantity-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

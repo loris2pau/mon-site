@@ -1,0 +1,22 @@
+/* footer.css */
+body {
+    background-color: #141923; /* Bleu foncé pour le fond */
+    color: #e5e5e5; /* Texte blanc cassé pour contraste */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+a {
+    color: #bb86fc; /* Lien en violet pour contraste */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

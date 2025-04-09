@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "title": "Lupin",
+        "genre": "Thriller",
+        "duration": "45m",
+        "img": "1.webp",
+        "description": "Un gentleman cambrioleur s'inspire des aventures d'Arsène Lupin.",
+        "prix": 9.99,
+        "stock":3
+    },
+    {
+        "id": 2,
+        "title": "Citadel",
+        "genre": "Drame, Crime, Action & Adventure",
+        "duration": "52m",
+        "img": "2.webp",
+        "description": "Les coulisses d'une agence de stars parisienne.",
+        "prix": 12.99,
+        "stock":3
+    },
+    {
+        "id": 3,
+        "title": "Marseille",
+        "genre": "Drame politique",
+        "duration": "55m",
+        "img": "3.webp",
+        "description": "La lutte pour le pouvoir à Marseille entre deux hommes politiques.",
+        "prix": 10.99,
+        "stock":3
+    },
+    {
+        "id": 4,
+        "title": "Le Bureau des Légendes",
+        "genre": "Espionnage",
+        "duration": "52m",
+        "img": "4.webp",
+        "description": "Les missions d'un agent des services secrets français.",
+        "prix": 14.99,
+        "stock":3
+    },
+    {
+        "id": 5,
+        "title": "Engrenages",
+        "genre": "Policier",
+        "duration": "52m",
+        "img": "5.webp",
+        "description": "Les enquêtes d'une équipe de police judiciaire parisienne.",
+        "prix": 11.99,
+        "stock":3
+    },
+    {
+        "id": 6,
+        "title": "Versailles",
+        "genre": "Historique",
+        "duration": "52m",
+        "img": "6.webp",
+        "description": "Les intrigues à la cour du Roi Soleil.",
+        "prix": 13.99,
+        "stock":3
+    },
+    {
+        "id": 7,
+        "title": "No Second Chance",
+        "genre": "Thriller",
+        "duration": "52m",
+        "img": "7.webp",
+        "description": "Une mère de famille recherche sa fille disparue.",
+        "prix": 9.99,
+        "stock":3
+    },
+    {
+        "id": 8,
+        "title": "Baron Noir",
+        "genre": "Drame politique",
+        "duration": "52m",
+        "img": "8.webp",
+        "description": "L'ascension d'un homme politique français.",
+        "prix": 12.99,
+        "stock":3
+    },
+    {
+        "id": 9,
+        "title": "Les Revenants",
+        "genre": "Fantastique",
+        "duration": "52m",
+        "img": "9.webp",
+        "description": "Des morts reviennent à la vie dans une petite ville de montagne.",
+        "prix": 10.99,
+        "stock":3
+    },
+    {
+        "id": 10,
+        "title": "Un Village Français",
+        "genre": "Drame historique",
+        "duration": "52m",
+        "img": "10.webp",
+        "description": "La vie dans un village sous l'Occupation allemande.",
+        "prix": 14.99,
+        "stock":3
+    }
+]

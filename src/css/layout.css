@@ -1,0 +1,25 @@
+/* layout.css */
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  header, footer {
+      height: 10%;
+    }
+    
+    .main-container {
+        display: flex;
+        flex: 1;
+    }
+    
+    nav {
+        width: 20%;
+    }
+    
+    main {
+    
+    width: 80%;
+  }
+  
