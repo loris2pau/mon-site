@@ -1,4 +1,3 @@
-// Login.js
 import React, { useState } from 'react';
 import '../css/auth.css';
 
@@ -8,8 +7,9 @@ const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Envoyer les données au serveur PHP
-    fetch('path/to/your/login.php', {
+
+    // Appel fetch pour envoyer les données au serveur PHP
+    fetch('http://localhost:8000/login.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
